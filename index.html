@@ -2,15 +2,16 @@
 <html>
     <head>
         <title>Ved Ameresh</title>
+        <meta name="description" content="Ved Ameresh Portfolio Page">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href = "style.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
         <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <img id = "clouds" src="images/cloud-background.png" />
-            <img id = "mtns" src="images/mtn-background.png" />
+        <img alt = "ved ameresh clouds" id = "clouds" src="images/cloud-background.png" />
+            <img alt = "ved ameresh mountains" id = "mtns" src="images/mtn-background.png" />
 
         <div class = "container">
             <div class = "row" >
@@ -19,19 +20,19 @@
                 </div>
             </div>
             <div class="row info-buttons">
-                <div class="col-sm-4" align= "center">
+                <div class="col-xs-4" align= "center">
                   <a href = "https://www.github.com/vameresh">
-                      <img class="icon" src="images/github.png" />
+                      <img alt = "github" class="icon" src="images/github.png" />
                   </a>
                 </div>
-                <div class="col-sm-4" align= "center">
+                <div class="col-xs-4" align= "center">
                   <a href = "https://www.linkedin.com/in/vedameresh/">
-                      <img class = "icon" src="images/linkedin.png" />
+                      <img alt = "linkedin" class = "icon" src="images/linkedin.png" />
                   </a>
                 </div>
-                <div class="col-sm-4" align= "center">
+                <div class="col-xs-4" align= "center">
                   <a href= "/files/ved_ameresh_resume.pdf" download>
-                      <img class = "icon" src="images/download.png" />
+                      <img alt = "download resume" class = "icon" src="images/download.png" />
                   </a>
                 </div>
               </div>
@@ -54,75 +55,6 @@
         </div>
 
         <div id="tile" class = "tile">
-        </div>
-
-        <div id = "udeca-tile" class = "tile">
-            <h3>Stryker Universal Device Configuration App</h3>
-            <p>
-                Smart Equipment Management or SEM&#174; already had developed a wireless ecosystem of medical and surgical Stryker devices to provide a more controlled customer experience. 
-                However, configuring these devices required manually plugging into them to connect them with the hospital network. 
-                There was a customer benefit to provide a faster, wireless method of configuration.
-                <br>
-                <br>
-                The task was to develop customer-facing agnostic mobile application that can interact with and configure Stryker Wi-Fi devices to connect to their surrouding hospital environment.
-                <br>
-                <br>
-                Working with a global team of 5 members located from San Francisco to India, I developed the beta prototype of the config app. 
-                Using the Ionic Mobile Dev Framework and Angular JS, the project was based on three main features: connectivity, dynamic UI generation, and secure file transfer. 
-                <br>
-                <br>
-                The beta development of the app could connect to devices either with Wi-Fi or Bluetooth for legacy models.
-                Once connected, the app would dynamically generate a UI built from a JSON packet recieved from the device.
-                After user input, the app submits a completed JSON packet back to the device to finish configuration.
-                All communication between the phone and device was done securely through HTTPS.
-                <br>
-                <br>
-                My team automated CI/CD through Microsoft Azure to ensure clean builds and concurrent testing,
-                and used Agile project management to stay updated on all progress and knowledge transfers.
-            </p>  
-        </div>
-
-        <div id = "os-tile" class = "tile">
-            <h3>Thread Library Implementation</h3>
-            <p> Working in a remote team of three, developed a working implementation of C++ thread library as a learning project. Implemented mutexes, conditional variables, and threads. Gained understanding of OS concurrency. </p>
-            <br>
-            <h3>OS Pager</h3>
-            <p> Working in a remote team of two, developed a working paging system to serve mapped virtual addresses for processes as a learning project. Implemented second-chance FIFO eviction of pages in virtual memory. Designed a system of r/w faults to improve efficiency as well as maintain correctness. Gained understanding of OS address spaces and processes. </p>
-            <br>
-            <h3>Networked File Server</h3>
-            <p> Working in a remote team of three, developed a encrypted networked filesystem as a learning project. Implemented creating, deleting, reading, and writing files and directorys in a remote server. Gained understanding of OS filesystems.</p>
-        </div>
-
-        <div id = "friendify-tile" class = "tile">
-            <h3>Friendify. A Spotify Project.</h3>
-            <p> Developed as a personal project to further understand backend systems as well as experiment with the Spotify API. 
-                Users can sign in through their spotify accounts and can compare music similarities with their friends.
-                <br>
-                Spotify API disallowed storage of user information, unless users are signed in and active. 
-                Workaround was to develop liveness storage so users can compare only when both are active on the app.
-                <br>
-                <br>
-                Built using Python Flask, Jinja templating, <i>Spotipy</i> Python Library, and SQL for persistent storage. 
-                <br>
-                <br>
-                <b>Github: </b> <a href = "https://github.com/vameresh/friendify">https://github.com/vameresh/friendify</a>
-            </p>
-        </div>
-
-        <div id = "pasta-tile" class = "tile">
-            <h3>PastaTime: Automated Pomodoro</h3>
-            <p> Working in a team of four, developed a frontend site as a learning project in UI/UX development and human-centered design.
-                We automated the Pomodoro productivity technique of work and break intervals. 
-                <br>
-                The site presents arcade-style visuals as well as a custom TomatoTimer that reduces color fill as time counts down.
-                It also includes custom breaks including traditional games as well as video streaming options such as Youtube, Netflix, etc.
-                <br>
-                <br>
-                Built using Vue JS framework and Bootstrap CSS.
-                <br>
-                <br>
-                <b>Github: </b> <a href = "https://github.com/vameresh/493pastatime">https://github.com/vameresh/493pastatime</a>
-            </p>
         </div>
 
     </body>

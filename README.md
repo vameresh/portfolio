@@ -1,3 +1,3 @@
-Portfolio Website.
-Built with HTML, CSS, and JQuery.
-Implemented parallax background.
+# Portfolio Website
+
+hosted at: https://vedameresh.com

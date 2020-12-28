@@ -7,11 +7,19 @@ body{
     background-color: #d7e6ee;
     overflow-x: hidden;
     color: #264653;
+    font-size: 14px;
     min-height:100vh;
     height: 100%;
     position: relative;
     padding-bottom: 100px;
     cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                            supported by Chrome, Edge, Opera and Firefox */
 }
 
 #clouds{
@@ -33,13 +41,30 @@ body{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 6em;
     font-weight: lighter;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 3em;
     font-weight: lighter;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+li{
+    font-size: 1.5em;
+}
+
+.container{
+    width: 100%;
 }
 
 .underline{
@@ -56,6 +81,10 @@ h2{
     text-decoration-line: underline;
     text-decoration-color: #264653;
     text-decoration-thickness: 1px;
+}
+
+#udeca:active{
+    cursor: pointer;
 }
 
 
@@ -75,9 +104,8 @@ h2{
 }
 
 .icon{
-    width: 2em;
+    width: 3em;
     opacity: 0.90;
-    margin-bottom: 10px;
 }
 
 .icon:hover{
@@ -92,23 +120,54 @@ h2{
     border: 4px white solid;
     display: none;
     padding: 1% 2%;
-    margin: 1% 2%;
+    margin: 6em 6em;
+    -webkit-touch-callout: text; /* iOS Safari */
+    -webkit-user-select: text; /* Safari */
+    -khtml-user-select: text; /* Konqueror HTML */
+    -moz-user-select: text; /* Old versions of Firefox */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+    user-select: text; /* Non-prefixed version, currently
+                            supported by Chrome, Edge, Opera and Firefox */
 }
 
 
 
 @media only screen and (max-width: 600px) {
-    h1{
-        font-size: 80px;
-    }
     
-    h2{
-        font-size: 40px;
+
+    a{
+        word-break: break-all;
     }
 
     .icon{
         width: 4em;
         margin-bottom: 10px;
+    }
+
+    .info-buttons{
+        padding: 0 0;
+    }
+
+    .tile {
+        margin: 1em 1em;
+    }
+
+    #clouds{
+        width: 240%;
+        left: -20%;
+    }
+
+    #mtns{
+        width: 240%;
+        left: -20%;
+    }
+
+    #name{
+        margin-top: 0;
+    }
+
+    #nav-bar{
+        display:block;
     }
 }
 
